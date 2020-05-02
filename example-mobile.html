@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-oOs/gFavzADqv3i5nCM+9CzXe3e5vXLXZ5LZ7PplpsWpTCufB7kqkTlC9FtZ5nJo" crossorigin="anonymous">
@@ -28,14 +28,22 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" rel="noopener noreferrer" href="https://www.lelo.com/f1s-developers-kit-red" target="_blank">LELO F1s</a>
-          <br/><br/>
-<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
-<br/<br/>
+          
             </li>
           </ul>
         </div>
     </nav>
 
+<br/><br/>
+
+    <button id="start-togetherjs">Start TogetherJS</button>
+<script>
+$(function () {
+  $("#start-togetherjs").click(TogetherJS);
+});
+</script>
+<br/><br/>
+    
     <main role="main" class="container" ng-cloak>
       <div class="row" ng-if="!isConnected()">
           <div class="col-12">
@@ -285,5 +293,6 @@
 
     <script src="lib/client.js"></script>
     <script src="example-mobile.js"></script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
   </body>
 </html>
