@@ -11,7 +11,12 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-oOs/gFavzADqv3i5nCM+9CzXe3e5vXLXZ5LZ7PplpsWpTCufB7kqkTlC9FtZ5nJo" crossorigin="anonymous">
     <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link href="example-mobile.css" rel="stylesheet">
-
+<button id="start-togetherjs">Start TogetherJS</button>
+<script>
+$(function () {
+  $("#start-togetherjs").click(TogetherJS);
+});
+</script>
     <title>LELO F1s Web Client</title>
   </head>
   <body ng-controller="demoController">
@@ -38,12 +43,6 @@
       <div class="row" ng-if="!isConnected()">
           <div class="col-12">
               <h1></h1>
-              <button id="start-togetherjs">Start TogetherJS</button>
-              <script>
-              $(function () {
-                $("#start-togetherjs").click(TogetherJS);
-              });
-              </script>
               <p class="lead">
                   Press on the 'CONNECT' button to run the demo.
                   <br/><br/>
